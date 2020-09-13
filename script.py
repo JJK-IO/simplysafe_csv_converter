@@ -1,9 +1,10 @@
-from utils import convert_export_to_import, pull_from_rh
+from utils import *
 
 if __name__ == "__main__":
+    export_file_location = "files/robinhood"
+
     # Convert SS Exported CSV to Importable CSV
-    # export_file_location = "FILE_LOCATION"
     # convert_export_to_import(export_file_location)
 
     # Pull Assets from Robinhood
-    pull_from_rh()
+    pull_from_rh(export_directory=export_file_location)
